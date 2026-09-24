@@ -130,6 +130,15 @@ Generate production packages with a single command:
 
 ---
 
+## Screenshots
+
+| | | |
+| :---: | :---: | :---: |
+| <a href="screenshots/screenshot_1.jpg"><img src="screenshots/screenshot_1.jpg" width="240" alt="Main Window"></a> | <a href="screenshots/screenshot_2.jpg"><img src="screenshots/screenshot_2.jpg" width="240" alt="Share Configuration"></a> | <a href="screenshots/screenshot_3.jpg"><img src="screenshots/screenshot_3.jpg" width="240" alt="Advanced Multi-User ACLs"></a> |
+| <a href="screenshots/screenshot_4.jpg"><img src="screenshots/screenshot_4.jpg" width="240" alt="File Manager Context Menu"></a> | <a href="screenshots/screenshot_5.jpg"><img src="screenshots/screenshot_5.jpg" width="240" alt="Diagnostics and Options"></a> | |
+
+---
+
 ## License
 
 This project is licensed under the **GNU General Public License v2 (GPLv2)**.
