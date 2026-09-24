@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TDE Samba Shares
+Comment=Manage your local Samba user network shares easily
+Exec=tdeshare %u
+Icon=network
+Terminal=false
+Type=Application
+Categories=Settings;System;Network;Filesystem;Qt;TDE;
+X-TDE-SubstituteUID=false

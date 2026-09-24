@@ -1,0 +1,27 @@
+# Build directories
+build/
+build-*/
+
+# Object and generated files
+*.o
+*.obj
+*.so
+*.a
+*.moc
+moc_*.cpp
+
+# Generated packages
+*.deb
+*.qsi
+qsi_setup/deb_packages/
+qsi_setup/output/
+qsi_setup/qinstaller
+
+# Temporary / editor files
+*~
+*.swp
+*.tmp
+.directory
+.DS_Store
+.vscode/
+.gemini/
