@@ -61,8 +61,8 @@
 - **Standalone Folder Mode**: When invoked from a file manager context menu (`tdeshare <folder>` or `%U`), opens only the specific folder share dialog without cluttering the screen with the main window. If changes are confirmed, the main management window opens with the newly configured share highlighted.
 - **Asynchronous Folder Browsing**: Right-clicking on an existing share in `tdeshare` allows opening it in Konqueror/Dolphin asynchronously via a detached process without freezing the GUI.
 
-> **Note on Packaging**:
-> Future binary packages (`.deb`, `.sqi`) will automatically detect installed file managers (Konqueror, Dolphin, d3lphin, Krusader) upon installation to register actions seamlessly, and clean them up automatically upon uninstallation.
+> **Automated File Manager Integration**:
+> Both the Debian package (`.deb`) and the Q4OS installer (`.qsi`) automatically detect installed file managers (Konqueror, Dolphin, d3lphin, Krusader) upon installation to register actions seamlessly, and clean them up automatically upon uninstallation.
 
 ---
 
@@ -104,9 +104,23 @@ The build process uses aggressive size and speed optimization flags tailored for
 ### Build Instructions
 
 ```bash
-# Build the project
+# Build the standalone binary:
 ./build.sh
 ```
+
+### Packaging (.deb & .qsi)
+
+Generate production packages with a single command:
+
+```bash
+# Build the Debian package (.deb):
+./build_deb.sh 1.0
+
+# Build the complete Q4OS installer (.qsi):
+./build_qsi.sh 1.0
+```
+- **Debian Package (`tdeshare_<version>_amd64.deb`)**: ~42 KB compressed, handles dependencies (`samba`, `tdecore`, `tqt3-mt`, `python3`) and installs file manager actions dynamically.
+- **Q4OS Installer (`setup_tdeshare_<version>.qsi`)**: ~94 KB standalone graphical installer wizard with embedded visuals and automatic Sycoca integration.
 
 ### Compiler Optimization Highlights
 - **Global `-Os` & LTO Driver**: Compiles all units and drives link-time code generation with `-Os -flto=auto` for a compact memory footprint and optimal CPU L1 instruction cache efficiency.
